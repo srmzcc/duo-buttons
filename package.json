@@ -1,0 +1,22 @@
+{
+  "name": "duo-buttons",
+  "version": "1.0.0",
+  "description": "A Tailwind CSS project that recreates Duolingo-style buttons for UI design.",
+  "scripts": {
+    "dev": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --watch",
+    "build": "tailwindcss -i ./src/styles/input.css -o ./src/styles/output.css --minify"
+  },
+  "keywords": [
+    "buttons",
+    "clone",
+    "duolingo",
+    "tailwind",
+    "ui"
+  ],
+  "author": "Santiago Ramos",
+  "license": "MIT",
+  "devDependencies": {
+    "@tailwindcss/cli": "4.1.12",
+    "tailwindcss": "4.1.12"
+  }
+}
