@@ -1,1 +1,29 @@
 @import "tailwindcss";
+
+@font-face {
+  font-family: "DINRoundPro";
+  font-style: normal;
+  font-weight: 300;
+  font-display: swap;
+  src: url("../assets/fonts/DINRoundPro-Light.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DINRoundPro";
+  font-style: normal;
+  font-weight: normal;
+  font-display: swap;
+  src: url("../assets/fonts/DINRoundPro.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "DINRoundPro";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../assets/fonts/DINRoundPro-Bold.woff2") format("woff2");
+}
+
+@theme {
+  --font-din-round: "DINRoundPro", sans-serif;
+}

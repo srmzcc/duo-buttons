@@ -8,14 +8,110 @@
   </head>
   
   <body>
-    <div class="flex flex-row justify-center items-end h-[60px]">
-      <a href="#" class="bg-[#58CC02] flex justify-center items-center hover:brightness-[1.1] w-[330px] h-[50px] outline-none px-[16px] rounded-[12px] shadow-[0_4px_0] active:shadow-none active:-mb-[4px] text-[#58A700]">
-        <span class="uppercase text-white font-bold truncate overflow-hidden">Empieza ahora</span>
+    <div class="w-screen h-screen flex flex-col justify-center items-center space-y-5">
+      <a
+        href="#"
+        class="
+          w-[330px]
+          h-[50px]
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          before:absolute
+          before:top-0
+          before:bottom-[4px]
+          before:right-0
+          before:left-0
+          before:bg-[#58CC02]
+          before:shadow-[0_4px_0_#58A700]
+          active:before:shadow-none
+          hover:before:brightness-[1.1]
+          before:rounded-[12px]
+          before:-z-1
+
+          outline-none
+          bg-transparent
+          px-[16px]
+          rounded-[12px]
+          touch-manipulation
+          cursor-pointer
+
+          active:translate-y-[4px]
+          transform-gpu
+        "
+        draggable="false"
+      >
+        <span
+          class="
+            font-din-round
+            text-[15px]
+            font-[700]
+            text-white
+
+            uppercase
+            tracking-[0.8px]
+            truncate
+
+            -mt-[4px]
+            select-none
+          "
+        >
+          Get started
+        </span>
       </a>
 
-      <button>
-        <span>
-          YA TENGO UNA CUENTA
+      <button
+        class="
+          w-[330px]
+          h-[50px]
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          before:absolute
+          before:top-0
+          before:bottom-[2px]
+          before:right-0
+          before:left-0
+          before:bg-white
+          before:border-[2px]
+          before:border-[#E5E5E5]
+          before:shadow-[0_2px_0_#E5E5E5]
+          active:before:shadow-none
+          hover:before:brightness-[0.9]
+          before:rounded-[12px]
+          before:-z-1
+
+          outline-none
+          bg-transparent
+          px-[16px]
+          rounded-[12px]
+          touch-manipulation
+          cursor-pointer
+
+          active:translate-y-[4px]
+          transform-gpu
+        "
+      >
+        <span
+          class="
+            font-din-round
+            text-[15px]
+            font-[700]
+            text-[#1CB1F6]
+
+            uppercase
+            tracking-[0.8px]
+            truncate
+
+            -mt-[4px]
+            select-none
+          "
+        >
+          I already have an account
         </span>
       </button>
     </div>
