@@ -4,114 +4,802 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="./styles/output.css" rel="stylesheet">
+    <link rel="icon" href="./assets/favicon.ico">
     <title>Duo Buttons</title>
   </head>
   
-  <body>
-    <div class="w-screen h-screen flex flex-col justify-center items-center space-y-5">
+  <body class="container flex flex-col justify-start items-center m-auto py-14">
+    <h1 class="font-din-round text-4xl font-[700] text-[#E5E5E5] uppercase tracking-[0.8px] mb-14">
+      Duo Buttons
+    </h1>
+
+    <div class="w-full flex flex-col justify-center items-center py-7 space-y-[12px]">
       <a
         href="#"
         class="
-          w-[330px]
-          h-[50px]
           relative
           inline-flex
           justify-center
           items-center
           
-          before:absolute
-          before:top-0
-          before:bottom-[4px]
-          before:right-0
-          before:left-0
-          before:bg-[#58CC02]
-          before:shadow-[0_4px_0_#58A700]
-          active:before:shadow-none
-          hover:before:brightness-[1.1]
-          before:rounded-[12px]
-          before:-z-1
-
-          outline-none
           bg-transparent
-          px-[16px]
-          rounded-[12px]
+          border-transparent
+          outline-none
           touch-manipulation
           cursor-pointer
-
-          active:translate-y-[4px]
           transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-white
+          text-[15px]
+          tracking-[0.8px]
+
+          w-[330px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[12px]
+          before:rounded-[12px]
+
+          before:bg-[#58CC02]
+          before:shadow-[0_4px_0_#58A700]
+          border-b-[4px]
+          active:translate-y-[4px]
+          hover:brightness-[1.1]
         "
-        draggable="false"
       >
-        <span
-          class="
-            font-din-round
-            text-[15px]
-            font-[700]
-            text-white
-
-            uppercase
-            tracking-[0.8px]
-            truncate
-
-            -mt-[4px]
-            select-none
-          "
-        >
+        <span class="uppercase truncate">
           Get started
         </span>
       </a>
 
       <button
         class="
-          w-[330px]
-          h-[50px]
           relative
           inline-flex
           justify-center
           items-center
           
-          before:absolute
-          before:top-0
-          before:bottom-[2px]
-          before:right-0
-          before:left-0
-          before:bg-white
-          before:border-[2px]
-          before:border-[#E5E5E5]
-          before:shadow-[0_2px_0_#E5E5E5]
-          active:before:shadow-none
-          hover:before:brightness-[0.9]
-          before:rounded-[12px]
-          before:-z-1
-
-          outline-none
           bg-transparent
-          px-[16px]
-          rounded-[12px]
+          border-transparent
+          outline-none
           touch-manipulation
           cursor-pointer
-
-          active:translate-y-[4px]
           transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+          
+          font-din-round
+          font-[700]
+          text-[#1CB1F6]
+          text-[15px]
+          tracking-[0.8px]
+          
+          w-[330px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[12px]
+          before:rounded-[12px]
+
+          before:bg-white
+          before:shadow-[0_2px_0_#E5E5E5]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:brightness-[0.9]
+
+          before:border-[2px]
+          before:border-[#E5E5E5]
         "
       >
-        <span
-          class="
-            font-din-round
-            text-[15px]
-            font-[700]
-            text-[#1CB1F6]
-
-            uppercase
-            tracking-[0.8px]
-            truncate
-
-            -mt-[4px]
-            select-none
-          "
-        >
+        <span class="uppercase truncate">
           I already have an account
+        </span>
+      </button>
+    </div>
+
+    <hr class="w-full border-t border-[#E5E5E5]">
+
+    <div class="w-full flex flex-row justify-center items-center bg-[#E0F5FF] py-7 space-x-[24px]">
+      <a
+        href="#"
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-[#4B4B4B]
+          text-[17px]
+
+          w-auto
+          h-auto
+          px-[16px]
+          py-[11.5px]
+          rounded-[12px]
+          before:rounded-[12px]
+
+          before:bg-white
+          before:shadow-[0_2px_0_#E5E5E5]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:brightness-[0.9]
+
+          before:border-[2px]
+          before:border-[#E5E5E5]
+          space-x-[10px]
+        "
+      >
+        <span class="w-[34px] h-[34px] inline-block self-start aspect-square">
+          <svg viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>badge-app-store</title>
+            <path d="M26.9039 19.1188C26.9363 16.611 28.2528 14.2945 30.3922 12.981C29.0364 11.0473 26.8469 9.86522 24.4843 9.7914C21.9986 9.53084 19.5888 11.2768 18.3221 11.2768C17.0309 11.2768 15.0807 9.81727 12.9806 9.86042C10.2174 9.94957 7.7038 11.4804 6.35946 13.8929C3.49663 18.8428 5.63205 26.1174 8.3744 30.1184C9.74645 32.0776 11.35 34.2661 13.4482 34.1885C15.5014 34.1035 16.2682 32.881 18.7466 32.881C21.202 32.881 21.9215 34.1885 24.0623 34.1392C26.2655 34.1035 27.6536 32.1713 28.9775 30.1935C29.9633 28.7975 30.7219 27.2546 31.2252 25.622C28.6084 24.5167 26.907 21.9562 26.9039 19.1188V19.1188Z" fill="currentColor"></path><path d="M22.8604 7.16005C24.0617 5.71991 24.6535 3.86887 24.5102 2C22.6749 2.1925 20.9796 3.06846 19.7621 4.45334C18.5599 5.81971 17.9508 7.60728 18.0691 9.42235C19.929 9.44147 21.6949 8.60765 22.8604 7.16005V7.16005Z" fill="currentColor"></path>
+          </svg>
+        </span>
+
+        <span class="inline-block leading-[20px]">
+          <span class="grid">
+            <span class="text-[14px] leading-[17px] mb-[1px]">
+              Download on the
+            </span>
+
+            App Store
+          </span>
+        </span>
+      </a>
+
+      <a
+        href="#"
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-[#4B4B4B]
+          text-[17px]
+
+          w-auto
+          h-auto
+          px-[16px]
+          py-[11.5px]
+          rounded-[12px]
+          before:rounded-[12px]
+
+          before:bg-white
+          before:shadow-[0_2px_0_#E5E5E5]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:brightness-[0.9]
+
+          before:border-[2px]
+          before:border-[#E5E5E5]
+          space-x-[10px]
+        "
+      >
+        <span class="w-[34px] h-[34px] inline-block self-start aspect-square">
+          <svg viewBox="0 0 37 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <title>badge-app-store</title>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M3.80942 4.3203C3.80942 4.09554 3.82731 3.88521 3.86151 3.69016L17.8617 18.4703L3.83906 33.2741C3.81952 33.1218 3.80942 32.961 3.80942 32.792V4.3203ZM5.35237 35.0876C5.86758 35.1708 6.47838 35.0454 7.13188 34.6805L24.1811 25.1417L19.4773 20.1758L5.35237 35.0876ZM21.0928 18.4703L26.2937 23.9609L32.63 20.4164C34.4567 19.393 34.4567 17.7194 32.63 16.6985L26.1861 13.0933L21.0928 18.4703ZM24.0742 11.9117L7.13188 2.43299C6.60625 2.13818 6.10808 1.99915 5.66613 1.99915C5.60892 1.99915 5.55264 2.00146 5.49734 2.00606L19.4773 16.7648L24.0742 11.9117Z" fill="currentColor"></path>
+          </svg>
+        </span>
+
+        <span class="inline-block leading-[20px]">
+          <span class="grid">
+            <span class="text-[14px] leading-[17px] mb-[1px]">
+              Get it on
+            </span>
+
+            Google Play
+          </span>
+        </span>
+      </a>
+    </div>
+
+    <hr class="w-full border-t border-[#E5E5E5]">
+
+    <div class="w-full flex flex-col justify-center items-center bg-[#100F3E] py-7">
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-[#000437]
+          text-[15px]
+          tracking-[0.8px]
+
+          w-auto
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[12px]
+          before:rounded-[12px]
+
+          before:bg-white
+          before:shadow-[0_4px_0_rgba(255,255,255,0.5)]
+          border-b-[4px]
+          active:translate-y-[4px]
+          hover:brightness-[1.1]
+        "
+      >
+        <span class="uppercase truncate">
+          Try 1 week free
+        </span>
+      </button>
+    </div>
+
+    <hr class="w-full border-t border-[#E5E5E5]">
+
+    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[24px]">
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+          
+          font-din-round
+          font-[700]
+          text-[#49C1F8]
+          text-[15px]
+          tracking-[0.8px]
+          
+          w-auto
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#131F24]
+          before:shadow-[0_2px_0_#37464F]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:brightness-[0.9]
+
+          before:border-[2px]
+          before:border-[#37464F]
+        "
+      >
+        <span class="uppercase truncate">
+          Login
+        </span>
+      </button>
+
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-[#131F24]
+          text-[15px]
+          tracking-[0.8px]
+
+          w-[375px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#49C1F8]
+          before:shadow-[0_4px_0_#189AD6]
+          border-b-[4px]
+          active:translate-y-[4px]
+          hover:brightness-[1.1]
+        "
+      >
+        <span class="uppercase truncate">
+          Next
+        </span>
+      </button>
+    </div>
+
+    <hr class="w-full border-t border-[#E5E5E5]">
+
+    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[15px]">
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+          
+          font-din-round
+          font-[700]
+          text-[#4286F4]
+          text-[15px]
+          tracking-[0.8px]
+          
+          w-[180px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#131F24]
+          before:shadow-[0_2px_0_#37464F]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:brightness-[0.9]
+
+          before:border-[2px]
+          before:border-[#37464F]
+          space-x-[10px]
+        "
+      >
+        <svg width="20" height="21" viewBox="0 0 20 21" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <title>G Copy</title>
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g fill-rule="nonzero">
+              <path d="M10.123 4.023c1.483 0 2.812.512 3.86 1.512l2.893-2.899C15.127 1.002 12.846 0 10.123 0 6.18 0 2.766 2.269 1.105 5.573l3.367 2.619c.796-2.393 3.024-4.169 5.651-4.169z" fill="#EB4335"/>
+              <path d="M19.815 10.345c0-.724-.068-1.417-.185-2.084h-9.507v3.874h5.44a4.674 4.674 0 0 1-2.021 3.11l3.27 2.544c1.906-1.761 3.003-4.365 3.003-7.444" fill="#4285F4"/>
+              <path d="M10.123 20.23c2.724 0 5.018-.896 6.69-2.441l-3.271-2.544c-.902.608-2.062.962-3.419.962-2.627 0-4.855-1.775-5.65-4.168l-3.368 2.618c1.66 3.305 5.074 5.574 9.018 5.574" fill="#34A853"/>
+              <path d="M1.105 14.657l3.367-2.618a6.089 6.089 0 0 1-.313-1.924c0-.668.111-1.315.313-1.923L1.105 5.573A10.088 10.088 0 0 0 .03 10.115v.001c0 1.634.389 3.176 1.075 4.541" fill="#FBBC05"/>
+            </g>
+          </g>
+        </svg>
+
+        <span class="uppercase truncate">
+          Google
+        </span>
+      </button>
+
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+          
+          font-din-round
+          font-[700]
+          text-[#3B5998]
+          text-[15px]
+          tracking-[0.8px]
+          
+          w-[180px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#131F24]
+          before:shadow-[0_2px_0_#37464F]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:brightness-[0.9]
+
+          before:border-[2px]
+          before:border-[#37464F]
+          space-x-[10px]
+        "
+      >
+        <svg width="12" height="22" viewBox="0 0 12 22" version="1.1" xmlns="http://www.w3.org/2000/svg">
+          <title>Fill 4</title>
+          <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+            <g fill="#3C5A99">
+              <g>
+                <g>
+                  <path d="M7.275 21.584v-9.845h3.305l.495-3.837h-3.8v-2.45c0-1.111.309-1.868 1.902-1.868l2.032-.001V.15C10.857.104 9.65 0 8.249 0c-2.93 0-4.936 1.788-4.936 5.072v2.83H0v3.837h3.313v9.845h3.962z"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </svg>
+
+        <span class="uppercase truncate">
+          Facebook
+        </span>
+      </button>
+    </div>
+
+    <hr class="w-full border-t border-[#E5E5E5]">
+
+    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[24px]">
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-[#131F24]
+          text-[15px]
+          tracking-[0.8px]
+
+          w-[150px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#93D333]
+          before:shadow-[0_4px_0_#78B933]
+          border-b-[4px]
+          active:translate-y-[4px]
+          hover:brightness-[1.1]
+
+          disabled:before:shadow-none
+          disabled:text-[#52656D]
+          disabled:before:bg-[#37464F]
+          disabled:translate-y-[4px]
+          disabled:brightness-[1]
+          disabled:cursor-auto
+        "
+      >
+        <span class="uppercase truncate">
+          Continue
+        </span>
+      </button>
+
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-[#131F24]
+          text-[15px]
+          tracking-[0.8px]
+
+          w-[150px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#93D333]
+          before:shadow-[0_4px_0_#78B933]
+          border-b-[4px]
+          active:translate-y-[4px]
+          hover:brightness-[1.1]
+
+          disabled:before:shadow-none
+          disabled:text-[#52656D]
+          disabled:before:bg-[#37464F]
+          disabled:translate-y-[4px]
+          disabled:brightness-[1]
+          disabled:cursor-auto
+        "
+        disabled
+      >
+        <span class="uppercase truncate">
+          Check
+        </span>
+      </button>
+    </div>
+
+    <hr class="w-full border-t border-[#E5E5E5]">
+
+    <div class="w-full flex flex-row justify-center items-center bg-[#5ACC02] py-7 space-x-[24px]">
+      <a
+        href="#"
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+          
+          font-din-round
+          font-[700]
+          text-white
+          text-[15px]
+          tracking-[0.8px]
+          
+          w-auto
+          h-auto
+          pl-[14px]
+          pr-[16px]
+          py-[14px]
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-transparent
+          before:shadow-[0_2px_0_rgba(0,0,0,0.2)]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:opacity-[0.8]
+
+          before:border-[2px]
+          before:border-[rgba(0,0,0,0.2)]
+          space-x-[12px]
+        "
+      >
+        <span class="w-[24px] h-[24px] inline-block aspect-square">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0.019043 4.83285C0.019043 4.10489 0.609167 3.51477 1.33712 3.51477H3.09456C3.82251 3.51477 4.41264 4.10489 4.41264 4.83285C4.41264 5.5608 3.82251 6.15093 3.09456 6.15093H1.33712C0.609167 6.15093 0.019043 5.5608 0.019043 4.83285Z" fill="white"/>
+            <path d="M0.019043 11.8628C0.019043 11.1348 0.609167 10.5447 1.33712 10.5447H3.09456C3.82251 10.5447 4.41264 11.1348 4.41264 11.8628C4.41264 12.5907 3.82251 13.1808 3.09456 13.1808H1.33712C0.609167 13.1808 0.019043 12.5907 0.019043 11.8628Z" fill="white"/>
+            <path d="M0.019043 18.8923C0.019043 18.1643 0.609167 17.5742 1.33712 17.5742H3.09456C3.82251 17.5742 4.41264 18.1643 4.41264 18.8923C4.41264 19.6202 3.82251 20.2104 3.09456 20.2104H1.33712C0.609167 20.2104 0.019043 19.6202 0.019043 18.8923Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M2.65527 3.51493V6.15108H3.09466C3.82261 6.15108 4.41274 5.56096 4.41274 4.83301C4.41274 4.10505 3.82261 3.51493 3.09466 3.51493H2.65527ZM3.09466 1.75749H3.09349C3.68239 0.708669 4.80532 0 6.09377 0H20.4134C22.3125 0 23.8519 1.53947 23.8519 3.4385V20.2869C23.8519 22.1859 22.3125 23.7254 20.4134 23.7254H6.09377C4.80535 23.7254 3.68244 23.0168 3.09353 21.968H3.09464C4.7932 21.968 6.17016 20.591 6.17016 18.8925C6.17016 17.1939 4.7932 15.817 3.09464 15.817H2.65527V14.9383H3.09464C4.7932 14.9383 6.17016 13.5614 6.17016 11.8628C6.17016 10.1643 4.7932 8.78731 3.09464 8.78731H2.65527V7.90852H3.09466C4.79322 7.90852 6.17017 6.53157 6.17017 4.83301C6.17017 3.13445 4.79322 1.75749 3.09466 1.75749ZM3.09464 20.2105H2.65527V17.5744H3.09464C3.8226 17.5744 4.41272 18.1645 4.41272 18.8925C4.41272 19.6204 3.8226 20.2105 3.09464 20.2105ZM3.09464 13.1809H2.65527V10.5448H3.09464C3.8226 10.5448 4.41272 11.1349 4.41272 11.8628C4.41272 12.5908 3.8226 13.1809 3.09464 13.1809ZM9.90473 3.95423C9.2981 3.95423 8.80633 4.446 8.80633 5.05263C8.80633 5.65926 9.2981 6.15103 9.90473 6.15103H19.1313C19.7379 6.15103 20.2297 5.65926 20.2297 5.05263C20.2297 4.446 19.7379 3.95423 19.1313 3.95423H9.90473ZM8.80633 10.3249C8.80633 9.71831 9.2981 9.22654 9.90473 9.22654H19.1313C19.7379 9.22654 20.2297 9.71831 20.2297 10.3249C20.2297 10.9316 19.7379 11.4233 19.1313 11.4233H9.90473C9.2981 11.4233 8.80633 10.9316 8.80633 10.3249ZM9.90473 14.4989C9.2981 14.4989 8.80633 14.9906 8.80633 15.5973C8.80633 16.2039 9.2981 16.6957 9.90473 16.6957H16.4951C17.1017 16.6957 17.5935 16.2039 17.5935 15.5973C17.5935 14.9906 17.1017 14.4989 16.4951 14.4989H9.90473Z" fill="white"/>
+          </svg>
+        </span>
+
+        <span class="uppercase truncate">
+          Guidebook
+        </span>
+      </a>
+    </div>
+
+    <hr class="w-full border-t border-[#E5E5E5]">
+
+    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[24px]">
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+          
+          w-[52px]
+          h-[52px]
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#131F24]
+          before:shadow-[0_2px_0_#37464F]
+          border-b-[2px]
+          active:translate-y-[2px]
+          hover:brightness-[0.9]
+
+          before:border-[2px]
+          before:border-[#37464F]
+        "
+      >
+        <svg width="18" height="20" viewBox="0 0 18 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path fill-rule="evenodd" clip-rule="evenodd" d="M0.820019 7.29641C-0.00641216 8.12284 -0.00641276 9.46275 0.820019 10.2892C1.64645 11.1156 2.98636 11.1156 3.81279 10.2892L6.89729 7.20468V17.8841C6.89729 19.0529 7.84474 20.0004 9.01349 20.0004C10.1822 20.0004 11.1297 19.0529 11.1297 17.8841V7.22501L14.1939 10.2892C15.0203 11.1156 16.3602 11.1156 17.1866 10.2892C18.0131 9.46275 18.0131 8.12284 17.1866 7.29641L10.5101 0.619824C10.0944 0.204119 9.54675 -0.00261376 9.00332 2.49416e-05C8.45989 -0.00261173 7.9123 0.204122 7.4966 0.619823L0.820019 7.29641Z" fill="#1CB0F6"/>
+        </svg>
+      </button>
+
+      <a
+        href="#"
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          w-[70px]
+          h-[65px]
+          rounded-[100%]
+          before:rounded-[100%]
+
+          before:bg-[#58CC02]
+          before:shadow-[0_8px_0_#58A700]
+          border-b-[8px]
+          active:translate-y-[8px]
+          hover:before:shadow-[0_6.5px_0_#58A700]
+          hover:translate-y-[1.5px]
+        "
+      >
+        <svg width="42" height="34" viewBox="0 0 42 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <g clip-path="url(#clip0_7030_116434)">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M22.0423 14.9989C23.4698 15.8749 23.4698 17.9491 22.0423 18.825L8.91839 26.8783C7.42288 27.796 5.5 26.7199 5.5 24.9653L5.5 8.85865C5.5 7.10401 7.42288 6.02791 8.9184 6.94562L22.0423 14.9989Z" fill="white"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M35.4535 14.9989C36.881 15.8749 36.881 17.9491 35.4535 18.825L22.3296 26.8783C20.8341 27.796 18.9112 26.7199 18.9112 24.9653L18.9112 8.85865C18.9112 7.10401 20.8341 6.02791 22.3296 6.94562L35.4535 14.9989Z" fill="white"/>
+          </g>
+          <defs>
+            <clipPath id="clip0_7030_116434">
+              <rect width="31" height="30" fill="white" transform="translate(5.5 2)"/>
+            </clipPath>
+          </defs>
+        </svg>
+      </a>
+
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-white
+          text-[15px]
+          tracking-[0.8px]
+
+          w-[328px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#3C4CFF]
+          before:shadow-[0_4px_0_#3F22EC]
+          border-b-[4px]
+          active:translate-y-[4px]
+          hover:brightness-[1.1]
+        "
+      >
+        <span class="uppercase truncate">
+          Try 2 weeks free
         </span>
       </button>
     </div>
