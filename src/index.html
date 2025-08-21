@@ -8,12 +8,12 @@
     <title>Duo Buttons</title>
   </head>
   
-  <body class="container flex flex-col justify-start items-center m-auto py-14">
-    <h1 class="font-din-round text-4xl font-[700] text-[#E5E5E5] uppercase tracking-[0.8px] mb-14">
+  <body class="flex flex-col justify-start items-center m-auto pt-14">
+    <h1 class="font-din-round text-4xl font-[700] text-[#E5E5E5] uppercase tracking-[0.8px] mb-12">
       Duo Buttons
     </h1>
 
-    <div class="w-full flex flex-col justify-center items-center py-7 space-y-[12px]">
+    <div class="w-full flex flex-col justify-center items-center p-7 space-y-[12px]">
       <a
         href="#"
         class="
@@ -40,7 +40,8 @@
           text-[15px]
           tracking-[0.8px]
 
-          w-[330px]
+          w-full
+          max-w-[330px]
           h-[50px]
           px-[16px]
           py-0
@@ -84,7 +85,8 @@
           text-[15px]
           tracking-[0.8px]
           
-          w-[330px]
+          w-full
+          max-w-[330px]
           h-[50px]
           px-[16px]
           py-0
@@ -107,9 +109,7 @@
       </button>
     </div>
 
-    <hr class="w-full border-t border-[#E5E5E5]">
-
-    <div class="w-full flex flex-row justify-center items-center bg-[#E0F5FF] py-7 space-x-[24px]">
+    <div class="w-full flex flex-col sm:flex-row justify-center items-center bg-[#E0F5FF] py-7 space-y-[12px] sm:space-y-0 sm:space-x-[24px]">
       <a
         href="#"
         class="
@@ -233,8 +233,6 @@
       </a>
     </div>
 
-    <hr class="w-full border-t border-[#E5E5E5]">
-
     <div class="w-full flex flex-col justify-center items-center bg-[#100F3E] py-7">
       <button
         class="
@@ -281,9 +279,7 @@
       </button>
     </div>
 
-    <hr class="w-full border-t border-[#E5E5E5]">
-
-    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[24px]">
+    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] p-7 space-x-[24px]">
       <button
         class="
           relative
@@ -356,7 +352,8 @@
           text-[15px]
           tracking-[0.8px]
 
-          w-[375px]
+          w-full
+          max-w-[375px]
           h-[50px]
           px-[16px]
           py-0
@@ -376,9 +373,7 @@
       </button>
     </div>
 
-    <hr class="w-full border-t border-[#E5E5E5]">
-
-    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[15px]">
+    <div class="w-full flex flex-col sm:flex-row justify-center items-center bg-[#131F24] py-7 space-y-[12px] sm:space-y-0 sm:space-x-[15px]">
       <button
         class="
           relative
@@ -501,9 +496,7 @@
       </button>
     </div>
 
-    <hr class="w-full border-t border-[#E5E5E5]">
-
-    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[24px]">
+    <div class="w-full flex flex-col sm:flex-row justify-center items-center bg-[#131F24] py-7 space-y-[12px] sm:space-y-0 sm:space-x-[24px]">
       <button
         class="
           relative
@@ -608,8 +601,6 @@
       </button>
     </div>
 
-    <hr class="w-full border-t border-[#E5E5E5]">
-
     <div class="w-full flex flex-row justify-center items-center bg-[#5ACC02] py-7 space-x-[24px]">
       <a
         href="#"
@@ -671,9 +662,7 @@
       </a>
     </div>
 
-    <hr class="w-full border-t border-[#E5E5E5]">
-
-    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] py-7 space-x-[24px]">
+    <div class="w-full flex flex-row justify-center items-center bg-[#131F24] p-7 space-x-[24px]">
       <button
         class="
           relative
@@ -695,6 +684,7 @@
           
           w-[52px]
           h-[52px]
+          aspect-square
           rounded-[16px]
           before:rounded-[16px]
 
@@ -713,6 +703,53 @@
         </svg>
       </button>
 
+      <button
+        class="
+          relative
+          inline-flex
+          justify-center
+          items-center
+          
+          bg-transparent
+          border-transparent
+          outline-none
+          touch-manipulation
+          cursor-pointer
+          transform-gpu
+          select-none
+          before:absolute
+          before:inset-0
+          active:before:shadow-none
+          before:-z-1
+
+          font-din-round
+          font-[700]
+          text-white
+          text-[15px]
+          tracking-[0.8px]
+
+          w-full
+          max-w-[328px]
+          h-[50px]
+          px-[16px]
+          py-0
+          rounded-[16px]
+          before:rounded-[16px]
+
+          before:bg-[#3C4CFF]
+          before:shadow-[0_4px_0_#3F22EC]
+          border-b-[4px]
+          active:translate-y-[4px]
+          hover:brightness-[1.1]
+        "
+      >
+        <span class="uppercase truncate">
+          Try 2 weeks free
+        </span>
+      </button>
+    </div>
+
+    <div class="w-full flex justify-center items-center bg-[#131F24] py-7">
       <a
         href="#"
         class="
@@ -758,50 +795,16 @@
           </defs>
         </svg>
       </a>
-
-      <button
-        class="
-          relative
-          inline-flex
-          justify-center
-          items-center
-          
-          bg-transparent
-          border-transparent
-          outline-none
-          touch-manipulation
-          cursor-pointer
-          transform-gpu
-          select-none
-          before:absolute
-          before:inset-0
-          active:before:shadow-none
-          before:-z-1
-
-          font-din-round
-          font-[700]
-          text-white
-          text-[15px]
-          tracking-[0.8px]
-
-          w-[328px]
-          h-[50px]
-          px-[16px]
-          py-0
-          rounded-[16px]
-          before:rounded-[16px]
-
-          before:bg-[#3C4CFF]
-          before:shadow-[0_4px_0_#3F22EC]
-          border-b-[4px]
-          active:translate-y-[4px]
-          hover:brightness-[1.1]
-        "
-      >
-        <span class="uppercase truncate">
-          Try 2 weeks free
-        </span>
-      </button>
     </div>
+
+    <footer class="w-full flex justify-center items-center bg-[#131F24] py-14">
+      <a
+        href="https://github.com/srmzcc/duo-buttons"
+        class="text-[#4493F8] text-[14px] font-bold hover:underline "
+        target="_blank"
+      >
+        https://github.com/srmzcc/duo-buttons
+      </a>
+    </footer>
   </body>
 </html>
